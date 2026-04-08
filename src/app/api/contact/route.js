@@ -4,15 +4,11 @@ export async function POST(request) {
   try {
     const data = await request.json();
     
+    // Yahan humne aapki Web3Forms Access Key pakki daal di hai
     const payload = {
       ...data,
-      access_key: process.env.WEB3FORMS_ACCESS_KEY || "", // Vercel se automatic access key uthayega
+      access_key: "81423f70-310a-40df-b952-38d4c25ecbea" 
     };
-
-    if (!payload.access_key) {
-       console.error("Access key na hone ke karan mock success return kar rahe hain");
-       return NextResponse.json({ message: 'Success' }, { status: 200 });
-    }
 
     const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
