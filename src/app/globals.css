@@ -1,10 +1,10 @@
 :root {
-  --bg-color: #050505;
-  --text-color: #f7f7f7;
-  --accent: #3b82f6;
-  --accent-hover: #2563eb;
-  --surface: #121212;
-  --surface-border: #222222;
+  --bg-color: #0d0d12;
+  --text-color: #ffffff;
+  --accent: #ec4899; /* Hot Pink */
+  --accent-hover: #db2777;
+  --surface: #18181b;
+  --surface-border: #27272a;
 }
 
 html, body {
